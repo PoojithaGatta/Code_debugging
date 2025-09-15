@@ -22,11 +22,11 @@ It uses prompt engineering and LLMs to automatically:
 
 ## 🔹 Sample Webpages  
 
-### 🏠 Home Page  
+### Home Page  
 ![Home Page](images/input.png)  
 
-### 🐞 Debugging Results  
+### Debugging Results  
 ![Debugging Results](images/result.png)  
 
-### 📋 Fixed code
+### Fixed code
 ![Fixed code](images/fixed_code.png)  
