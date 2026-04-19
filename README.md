@@ -1,38 +1,59 @@
-# DebugGPT – Automated Code Debugger   
+# Code Intelligence & Document Understanding  
 
-##  Introduction   
-**DebugGPT** is a web application built with **Streamlit, LangChain, and LangGraph** that helps developers debug their code faster and more efficiently.  
-It uses prompt engineering and LLMs to automatically:  
-- Detect bugs  
-- Suggest fixes  
-- Generate corrected code  
-- Create reports  
-- Produce test cases  
+##  Introduction  
+This project presents an the following:  
+- **Code Generation**  
+- **Code Debugging**  
+- **Document Understanding**  
 
----
-
-## What DebugGPT Does   
-1. **Bug Detection** – Finds errors in Python, C, C++, and Java code   
-2. **Fix Suggestions** – Explains the issues and provides solutions   
-3. **Corrected Code** – Outputs a clean, working version of the code   
-4. **Report Generation** – Summarizes bugs, fixes, and impacts   
-5. **Test Case Generation** – Creates test cases (normal, edge, error cases)   
+It leverages **Transformer-based models (CodeT5, BART, LED, DiT, LLaMA)** to automate software development and document analysis tasks efficiently.
 
 ---
 
-## 🔹 Sample Webpages  
+## 🔹 Code Generation Results  
 
-### Home Page  
-![Home Page](images/input.png)  
+| Model   | BLEU Score | ROUGE Score | METEOR | BERTScore (F1) |
+|--------|-----------|------------|--------|----------------|
+| CodeT5 | 0.78      | 0.81       | 0.76   | 0.84           |
+| BART   | 0.74      | 0.79       | 0.72   | 0.80           |
 
-### Debugging Results  
-![Debugging Results](images/result.png)  
+✅ **Best Model: CodeT5**
 
-### Fixed code
-![Fixed code](images/fixed_code.png)  
+---
 
-### Report Generation 
-![report](images/report.png)  
+## 🔹 Code Debugging  
 
-### Test cases
-![test cases](images/Test.png)  
+### Performance Graph  
+![Debugging Graph](Code_Debugging/images/result.png)  
+
+---
+
+## 🔹 Document Understanding  
+
+The system integrates **Document Classification + Summarization** using Vision and Language Transformers.
+
+### Key Performance  
+- Classification Accuracy: **~99%**  
+- LED outperforms BART in summarization (higher semantic accuracy and layout fidelity) :contentReference[oaicite:1]{index=1}  
+
+---
+
+## 🔹 Evaluation Results  
+
+### Confusion Matrix  
+![Confusion Matrix](Document_Understanding/Results/confusion_matrix.png)  
+
+### Classification Report  
+![Classification Report](Document_Understanding/Results/classification_report.png)  
+
+### Model Evaluation Graph  
+![Evaluation Graph](Document_Understanding/Results/evaluation_graph.png)  
+
+---
+
+## 🔹 Embeddings & FAISS Index  
+Stored embeddings and FAISS index used in the system are available here:  
+🔗 https://drive.google.com/drive/folders/120ApkMXuY033KxfYh-DQJ98lPTRrAbiV  
+
+---
+
