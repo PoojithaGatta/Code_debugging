@@ -22,7 +22,7 @@ It uses prompt engineering and fine-tuned models to automatically:
 
 ---
 
-## 🔹 Sample Outputs  
+## Sample Outputs  
 
 ### Input Prompt  
 ![Input Prompt](results/prompt.png)  
