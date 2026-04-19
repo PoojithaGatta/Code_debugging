@@ -24,7 +24,7 @@ It leverages **Transformer-based models (CodeT5, BART, LED, DiT, LLaMA)** to aut
 ## 🔹 Code Debugging  
 
 ### Performance Graph  
-![Debugging Graph](Code_Debugging/images/result.png)  
+![Debugging Graph](Code_Debugging/images/RESULTS.png)  
 
 ---
 
@@ -47,7 +47,7 @@ The system integrates **Document Classification + Summarization** using Vision a
 ![Classification Report](Document_Understanding/Results/classification_report.png)  
 
 ### Model Evaluation Graph  
-![Evaluation Graph](Document_Understanding/Results/evaluation_graph.png)  
+![Evaluation Graph](Document_Understanding/Results/DS.png)  
 
 ---
 
