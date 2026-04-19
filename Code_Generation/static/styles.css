@@ -1,0 +1,174 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9fafb;
+    color: #374151;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Card */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    margin-bottom: 24px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #f9fafb;
+    color: #374151;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: #1e40af;
+    outline: none;
+}
+
+/* Button */
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #1e40af;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1e3a8a;
+}
+
+.submit-button:disabled {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}
+
+/* Spinner */
+.spinner {
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #1e40af;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    animation: spin 1s linear infinite;
+    margin-left: 8px;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Error Message */
+.error-message {
+    color: #dc2626;
+    font-size: 0.9rem;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* Generated Code Section */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 16px;
+}
+
+.code-output {
+    background-color: #1f2937;
+    color: #f3f4f6;
+    padding: 16px;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-x: auto;
+}
+/* Add these styles to your existing CSS file */
+
+/* Container for the generated code section */
+.code-output-container {
+    position: relative;
+}
+
+/* Copy button styles */
+#copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+#copy-button:hover {
+    opacity: 1;
+}
+
+/* Hide the copy button by default */
+#copy-button {
+    display: none;
+}

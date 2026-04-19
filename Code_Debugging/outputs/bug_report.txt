@@ -1,0 +1,20 @@
+**Software Bug Report**
+
+### 1. Summary of Issues Found
+The code had a critical bug that caused an infinite recursion in the `factorial(n)` function, leading to a `RecursionError: maximum recursion depth exceeded` exception. This issue has been identified and resolved.
+
+### 2. Detailed Explanation of Each Fix
+The fix involved adding a base case to the recursive function `factorial(n)` to stop the recursion when `n` reaches a certain value (e.g., 0 or 1). Additionally, a check was added to handle negative numbers, as factorial is not defined for negative integers. The corrected code now includes:
+* A base case to return 1 when `n` is 0 or 1
+* A check to raise a `ValueError` when `n` is less than 0
+
+### 3. Impact Assessment
+The impact of this bug was significant, as it would cause the program to crash with a `RecursionError` exception. The fix ensures that the function now behaves correctly and returns the expected results for non-negative integers. The added check for negative numbers also improves the function's robustness by providing a clear error message instead of attempting to calculate an undefined result.
+
+### 4. Alternative Solutions Considered
+Alternative solutions considered included:
+* Using an iterative approach instead of recursion to calculate the factorial
+* Implementing a more advanced error handling mechanism to handle edge cases
+* Adding additional checks for non-integer inputs
+
+However, the chosen solution was deemed the most straightforward and effective way to address the issue while maintaining the original function's intent and simplicity.
